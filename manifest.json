@@ -1,0 +1,34 @@
+{
+  "name": "browser bookmark",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "author": "siye",
+
+  "description": "chrome extensions. get bookmark build main page for browser",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon48.png"
+  },
+
+  "browser_action": {
+    "default_title": "书签导航",
+    "default_icon": "images/icon16.png",
+    "default_popup": "html/index.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "js": ["js/content_scripts.js"],
+
+      "matches": ["http://*/*", "https://*/*"],
+
+      "run_at": "document_start"
+    }
+  ],
+  
+  "permissions": ["http://*/*", "https://*/*", "bookmarks"]
+}

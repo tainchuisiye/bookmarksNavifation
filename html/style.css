@@ -1,0 +1,52 @@
+ul li {
+  list-style: none;
+}
+
+ul {
+  width: 120px;
+  padding: 0;
+}
+
+ul button {
+  width: 100%;
+  border: none;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+ul button:hover {
+  color: blue;
+}
+
+button:focus {
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+
+fieldset {
+  padding: 0.35em 0.625em 0.75em;
+  margin: 0 2px;
+  border: 1px solid silver;
+  max-height: 190px;
+  overflow: hidden
+}
+legend {
+  padding: 0.5em;
+  border: 0;
+  width: auto;
+  margin-bottom: -4px
+}
+
+.btn{
+  margin:5px;
+  max-width:200px;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.fr{
+  float: right
+}
