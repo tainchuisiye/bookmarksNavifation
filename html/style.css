@@ -30,23 +30,54 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
   margin: 0 2px;
   border: 1px solid silver;
-  max-height: 190px;
-  overflow: hidden
+  /* max-height: 190px; */
+  overflow: hidden;
+  position: relative;
 }
+
+fieldset.full {
+  max-height: auto;
+}
+
+fieldset.small {
+  max-height: 55px;
+}
+fieldset.middle {
+  max-height: 190px;
+}
+
 legend {
   padding: 0.5em;
   border: 0;
   width: auto;
-  margin-bottom: -4px
+  margin-bottom: -4px;
 }
 
-.btn{
-  margin:5px;
-  max-width:200px;
+.btn {
+  margin: 5px;
+  max-width: 200px;
   text-overflow: ellipsis;
-  overflow: hidden
+  overflow: hidden;
 }
 
-.fr{
-  float: right
+.fr {
+  float: right;
+}
+
+.container {
+  padding-bottom: 20px;
+}
+
+.glyphicon {
+  position: absolute;
+  right: 0px;
+  top: 24px;
+  cursor: pointer;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0px 0px 4px;
+}
+
+.glyphicon:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
