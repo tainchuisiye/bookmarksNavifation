@@ -53,6 +53,8 @@ const createDom = (list) => {
 }
 
 
+
+
 window.onload = () => {
   const bookmarks = JSON.parse(localStorage.getItem('bookmarks'))
   if (bookmarks && location.protocol === 'chrome-extension:') {
